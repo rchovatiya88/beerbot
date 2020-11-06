@@ -5,5 +5,7 @@ Making sure i don't miss out on my 🍺 delivery
 
 - Download www.node.js 
 - Download or clone this repo
-- To run `npx cypress open` in your termimal 
-- Doubleclick to run chrome 
+    - `cd /path/beerbot` go to the folder in your termimal (mac or windown node.js cmd terminal)
+- run `npm install`
+- To open  cypress dialog box `npx cypress open` 
+- Doubleclick on test to run chrome

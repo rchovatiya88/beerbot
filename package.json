@@ -1,0 +1,22 @@
+{
+  "name": "beerbot",
+  "version": "1.0.0",
+  "description": "Making sure i don't miss out on my 🍺 delivery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rchovatiya88/beerbot.git"
+  },
+  "author": "Ronak Chovatiya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rchovatiya88/beerbot/issues"
+  },
+  "homepage": "https://github.com/rchovatiya88/beerbot#readme",
+  "dependencies": {
+    "cypress": "^5.5.0"
+  }
+}
