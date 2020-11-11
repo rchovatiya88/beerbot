@@ -1,13 +1,15 @@
+// =============================================================================
+// Buy a specific beer 
+// =============================================================================
+
+
 context('Beer buying bot ', () => {
+    // this is the main homepage ===============================================
+
     const baseURL = "https://shop.rarbrewing.com/"
 
 
-    // it('Go to the beer page', () => {
-    //     cy.visit(baseURL + '/product-category/beer-release/');
-    // });
-
     it('Go to home page and try to buy a product', () => {
-        // cy.get('.custom-logo').click();
         cy.visit(baseURL + '/product/new-release-sticker-pack/');
         cy.get('#product-46255 > div.summary.entry-summary > form > button').click();
         cy.wait(1500)
@@ -15,7 +17,10 @@ context('Beer buying bot ', () => {
         cy.wait(1500);
         cy.get('.checkout-button').click();
     });
-
+    // =============================================================================
+    // Filling in personal details, To change detials,simply change the values from 
+    // inside the single quotes where it says .type('CHANGETHIS')
+    // =============================================================================
     it('Cart Info', () => {
         cy.get('#billing_first_name').type('');
         cy.get('#billing_last_name').type('');
@@ -33,9 +38,15 @@ context('Beer buying bot ', () => {
         // cy.wait(2500);
     });
 
-    // it('Billing info', () => {
-    //     cy.get('#stripe-card- element').type('12332345123122312');
-    //     cy.get('#stripe-exp-element').type('02/23');
-    //     cy.get('#stripe-cvc-element > .__PrivateStripeElement > iframe').type('234');
-    // });
+
 });
+
+// it('Billing info', () => {
+//     cy.get('#stripe-card- element').type('12332345123122312');
+//     cy.get('#stripe-exp-element').type('02/23');
+//     cy.get('#stripe-cvc-element > .__PrivateStripeElement > iframe').type('234');
+// });
+
+// it('Go to the beer  promo page', () => {
+//     cy.visit(baseURL + '/product-category/beer-release/');
+// });
