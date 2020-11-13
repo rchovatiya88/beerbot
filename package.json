@@ -16,7 +16,10 @@
     "url": "https://github.com/rchovatiya88/beerbot/issues"
   },
   "homepage": "https://github.com/rchovatiya88/beerbot#readme",
-  "dependencies": {
-    "cypress": "^5.5.0"
+  "dependencies": {},
+  "devDependencies": {
+    "@testing-library/cypress": "^7.0.1",
+    "cypress": "^5.6.0",
+    "cypress-xpath": "^1.6.1"
   }
 }
